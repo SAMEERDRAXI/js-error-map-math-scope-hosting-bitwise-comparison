@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Math Constants</h2>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 
+"<p><b>Math.E:</b> " + Math.E + "</p>" +
+"<p><b>Math.PI:</b> " + Math.PI + "</p>" +
+"<p><b>Math.SQRT2:</b> " + Math.SQRT2 + "</p>" +
+"<p><b>Math.SQRT1_2:</b> " + Math.SQRT1_2 + "</p>" +
+"<p><b>Math.LN2:</b> " + Math.LN2 + "</p>" +
+"<p><b>Math.LN10:</b> " + Math.LN10 + "</p>" +
+"<p><b>Math.LOG2E:</b> " + Math.LOG2E + "</p>" +
+"<p><b>Math.Log10E:</b> " + Math.LOG10E + "</p>";
+</script>
+
+<!--JavaScript Math.ceil-->
+<h3>JavaScript Math.ceil()</h3>
+
+<p>Math.ceil() rounds a number <strong>up</strong> to its nearest integer:</p>
+
+<p id="math.ceil"></p>
+
+<script>
+document.getElementById("math.ceil").innerHTML = Math.ceil(4.4);
+</script>
+
+
+<h2>JavaScript Math.floor()</h2>
+
+<p>Math.floor(x) returns the value of x rounded <strong>down</strong> to its nearest integer:</p>
+
+<p id="math.floor"></p>
+
+<script>
+document.getElementById("math.floor").innerHTML = Math.floor(4.7);
+</script>
+
+<h2>JavaScript Math.trunc()</h2>
+
+<p>Math.trunc(x) returns the integer part of x:</p>
+
+<p id="math.trunc"></p>
+
+<script>
+document.getElementById("math.trunc").innerHTML = Math.trunc(4.7);
+</script>
+
+
+<h2>JavaScript Math.pow()</h2>
+
+<p>Math.pow(x,y) returns the value of x to the power of y:</p>
+
+<p id="math.power"></p>
+
+<script>
+document.getElementById("math.power").innerHTML = Math.pow(8,2);
+</script>
+
+
+<h2>JavaScript Math.sin()</h2>
+
+<p>Math.sin(x) returns the sin of x (given in radians):</p>
+<p>Angle in radians = (angle in degrees) * PI / 180.</p>
+
+<p id="math.sin"></p>
+
+<script>
+document.getElementById("math.sin").innerHTML = 
+"The sine value of 90 degrees is " + Math.sin(90 * Math.PI / 180);
+</script>
+
+<h2>JavaScript Math.cos()</h2>
+
+<p>Math.cos(x) returns the cosine of x (given in radians):</p>
+<p>Angle in radians = (angle in degrees) * PI / 180.</p>
+
+<p id="math.cos"></p>
+
+<script>
+document.getElementById("math.cos").innerHTML = 
+"The cosine value of 0 degrees is " + Math.cos(0 * Math.PI / 180);
+</script>
+
+
+<h2>JavaScript Math.min()</h2>
+
+<p>Math.min() returns the lowest value in a list of arguments:</p>
+
+<p id="demo1"></p>
+
+<script>
+document.getElementById("demo1").innerHTML =
+Math.min(0, 150, 30, 20, -8, -200);
+</script>
+
+
+<h2>JavaScript Math.max()</h2>
+
+<p>Math.max() returns the highest value in a list of arguments.</p>
+
+<p id="demo3"></p>
+
+<script>
+document.getElementById("demo3").innerHTML =
+Math.max(0, 150, 30, 20, -8, -200);
+</script>
+
+<h2>JavaScript Math.random()</h2>
+
+<p>Math.random() returns a random number between 0 and 1:</p>
+
+<p id="demo4"></p>
+
+<p>Tip: Click on "Run" several times.</p>
+
+<script>
+document.getElementById("demo4").innerHTML = Math.random();
+</script>
+
+
+<h2>JavaScript Math.log()</h2>
+
+<p>Math.log() returns the natural logarithm of a number:</p>
+
+<p id="demo5"></p>
+
+<script>
+document.getElementById("demo5").innerHTML = Math.log(3);
+</script>
+
+
+<h2>JavaScript Math</h2>
+
+<p>Math.PI returns PI (approximately 3.14):</p>
+
+<p id="demo6"></p>
+
+<script>
+document.getElementById("demo6").innerHTML = Math.PI;
+</script>
+
+<h2>JavaScript Math</h2>
+
+<p>Math.round() rounds a number to the nearest integer:</p>
+
+<p id="demo7"></p>
+
+<script>
+let a = Math.round(2.60);
+let b = Math.round(2.50);
+let c = Math.round(2.49);
+let d = Math.round(-2.60);
+let e = Math.round(-2.50);
+let f = Math.round(-2.49);
+
+document.getElementById("demo7").innerHTML = 
+a + "<br>" + b + "<br>" + c + "<br>" + d + "<br>" + e + "<br>" + f;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Errors</h1>
+<p>In this example we have written alert as adddlert to deliberately produce an error:</p>
+
+<p id="demo1"></p>
+
+<script>
+try {
+  adddlert("Welcome to SAM'S WEB!");
+}
+catch(err) {
+  document.getElementById("demo1").innerHTML = err.name;
+}
+</script>
+
+<h1>JavaScript Errors</h1>
+
+<p>You cannot set the number of significant digits of a number to 500:</p>
+
+<p id="demo2">
+
+<script>
+let num = 1;
+try {
+  num.toPrecision(500);
+}
+catch(err) {
+  document.getElementById("demo2").innerHTML = err.name;
+}
+</script>
+
+<h1>JavaScript Errors</h1>
+
+<p>You cannot use the value of a non-existing variable:</p>
+
+<p id="demo3"></p>
+
+<script>
+let x = 5;
+try {
+  x = y + 1;
+}
+catch(err) {
+  document.getElementById("demo3").innerHTML = err.name;
+}
+</script>
+
+
+<h1>JavaScript Errors</h1>
+
+<p>You cannot evaluate code that contains a syntax error:</p>
+
+<p id="demo4"></p>
+
+<script>
+try {
+  eval("'Hello SAM");
+}
+catch(err) {
+  document.getElementById("demo4").innerHTML = err.name;
+}
+</script>
+
+<h1>JavaScript Errors</h1>
+
+<p>You cannot convert a number to upper case:</p>
+
+<p id="demo5"></p>
+
+<script>
+let num = 1;
+try {
+  num.toUpperCase();
+}
+catch(err) {
+  document.getElementById("demo5").innerHTML = err.name;
+}
+</script>
+
+<h1>JavaScript Errors</h1>
+
+<p>Some characters cannot be URI decoded:</p>
+
+<p id="demo6"></p>
+
+<script>
+try {
+  decodeURI("%%%");
+}
+catch(err) {
+  document.getElementById("demo6").innerHTML = err.name;
+}
+</script>
+
+
+</body>
+</html>
